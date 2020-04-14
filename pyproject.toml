@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ideasoft_live"
+version = "0.1.0"
+description = "CLI Application to poll data from https://canli.ideasoft.com.tr"
+authors = ["Ahmetcan Güvendiren <ahm@glacion.com>"]
+license = "MIT"
+
+[tool.poetry.scripts]
+app = "ideasoft_live.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.23.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
